@@ -135,7 +135,7 @@ class CoordConvertr(QMainWindow):
                 ]
                 converted = func(*payload)
                 converted = [
-                    round(param, 3) if type(param) != str else param
+                    round(param, 4) if type(param) != str else param
                     for param in converted
                 ]
                 all_converted.append(sep.join([str(param) for param in converted]))

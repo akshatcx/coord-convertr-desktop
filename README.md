@@ -7,11 +7,14 @@ Application to convert various formats of coordinates.
 pip install -r requirements.txt
 python main.py
 ```
+This will load the GUI for the desktop application.
 
 ## GUI Specification
 
 ### Input formats
-GUI takes input in csv where each row contains a coordinate in the following format:
+GUI takes input in csv where each row contains a coordinate in the following format.
+The separator for csv can be chosen from the following `',', ';', '\t'`
+
 - Lat-Lon format: `latitude, logitude`
 ```
 51.24,12.41
