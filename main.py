@@ -1,5 +1,5 @@
 """
-coord-convertr v1.0.0
+coord-converter v1.0.0
 Author: akshatcx (akshat.c2k@gmail.com)
 """
 import sys
@@ -21,10 +21,10 @@ from PyQt5.QtWidgets import (
 )
 
 
-class CoordConvertr(QMainWindow):
+class CoordConverter(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.title = "Coord Convertr"
+        self.title = "Coord Converter"
         self.screen_width, self.screen_height = (
             self.geometry().width(),
             self.geometry().height(),
@@ -41,7 +41,7 @@ class CoordConvertr(QMainWindow):
 
         # heading
         layout1 = QHBoxLayout()
-        label = QLabel("Coordinate Convertr")
+        label = QLabel("Coordinate Converter")
         label.setStyleSheet("font: 20pt; font-weight: bold")
         layout1.addWidget(label)
 
@@ -149,6 +149,6 @@ class CoordConvertr(QMainWindow):
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
-    toolkit = CoordConvertr()
+    toolkit = CoordConverter()
     toolkit.show()
     sys.exit(app.exec_())

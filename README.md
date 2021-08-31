@@ -1,4 +1,4 @@
-# Coord Convertr
+# UTM converter
 Application to convert various formats of coordinates.
 
 
